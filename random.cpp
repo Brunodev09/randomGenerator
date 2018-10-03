@@ -9,12 +9,12 @@ int main() {
 	random(10,3);
 	return 0;
 }
-//Dynamic arrays are also called vectors
+
 void random(int range, int total) {
 	if (range < total) return;
 
 	srand(time(NULL));
-	int *draw = new int[total]; //to use a dynamic array, just use a pointer. An array with no definite size, CAN GROW!
+	int *draw = new int[total]; 
 
 	for (int i = 0; i < total; i++) {
 		draw[i] = rand() % range + 1;
